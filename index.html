@@ -1,1 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Billing Management System</title>
 
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#f0fdf4;
+color:#1f2937;
+line-height:1.6;
+}
+
+nav{ 
+background:#065f46; 
+padding:15px 40px; 
+display:flex; 
+justify-content:space-between; 
+align-items:center; 
+position:sticky; 
+top:0; 
+z-index:1000; 
+}
+  
+nav h1{
+color:white;
+font-size:28px;
+font-weight:bold;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#bbf7d0;
+}
+
+.hero{
+padding:80px 20px;
+text-align:center;
+background:
+linear-gradient(rgba(16,185,100,0.85), rgba(4,120,87,0.85)),
+url("https://static.vecteezy.com/system/resources/thumbnails/056/054/613/small/swirling-green-background-abstract-background-photo.jpg");
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.hero h2{
+font-size:42px;
+margin-bottom:15px;
+font-weight:bold;
+}
+
+.hero p{
+font-size:20px;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:40px 0;
+}
+
+section{
+margin-bottom:60px;
+}
+
+section h2{
+font-size:32px;
+color:#065f46;
+margin-bottom:20px;
+border-left:8px solid #10b981;
+padding-left:15px;
+font-weight:bold;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 12px rgba(0,0,0,0.08);
+font-weight:bold;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:12px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+.team{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 12px rgba(0,0,0,0.08);
+font-size:18px;
+}
+
+footer{
+background:#065f46;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+font-weight:bold;
+}
+
+.btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 22px;
+background:#10b981;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#047857;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>Billing System</h1>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#screenshots">Screenshots</a></li>
+<li><a href="#team">Team</a></li>
+</ul>
+</nav>
+
+<section class="hero" id="home">
+<h2>Billing Management System</h2>
+<p>Software Construction & Development Project</p>
+<a href="https://github.com/HadiqaShabbir/Billing-Management-System" class="btn">View GitHub Repository</a>
+</section>
+
+<div class="container">
+
+<section id="about">
+<h2>Project Description</h2>
+<p>
+This Billing Management System is developed to automate billing operations for stores and businesses.
+The system manages products, purchases, customer receipts, discount calculations, product updates,
+and product deletion using a modern GUI and database integration.
+</p>
+</section>
+
+<section id="features">
+<h2>Core Features</h2>
+
+<div class="features">
+<div class="card">Add New Product</div>
+<div class="card">Add Purchase Record</div>
+<div class="card">Generate Receipt</div>
+<div class="card">Automatic Discount</div>
+<div class="card">Update Product Price</div>
+<div class="card">Delete Product</div>
+<div class="card">Database Storage</div>
+<div class="card">Input Validation</div>
+</div>
+</section>
+
+<section id="screenshots">
+<h2>System Screenshots</h2>
+
+<div class="gallery">
+<img src="screenshots/home-page.png" alt="Main Interface">
+<img src="screenshots/add-product.png" alt="Add Product">
+<img src="screenshots/purchase-entry.png" alt="Purchase Entry">
+<img src="screenshots/receipt.png" alt="Receipt">
+<img src="screenshots/update-price.png" alt="Update Price">
+<img src="screenshots/delete-product.png" alt="Delete Product">
+<img src="screenshots/validation-error.png" alt="Validation">
+</div>
+</section>
+
+<section id="team">
+<h2>Team Members</h2>
+
+<div class="team">
+<p>1. Hadiqa Shabbir</p>
+<p>2. Rida e Fatima</p>
+<p>3. Manahil Ahsan</p>
+</div>
+</section>
+
+</div>
+
+<footer>
+Developed for SCD CEA Project | Billing Management System
+</footer>
+
+</body>
+</html>
